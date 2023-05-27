@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CE_MYMOD\Assemblies\CE_MyMod.dll
+C:\Users\Misha\source\repos\CE_MyMod\CE_MyMod\obj\Debug\CE_MyMod.csproj.AssemblyReference.cache
+C:\Users\Misha\source\repos\CE_MyMod\CE_MyMod\obj\Debug\CE_MyMod.csproj.CoreCompileInputs.cache
+C:\Users\Misha\source\repos\CE_MyMod\CE_MyMod\obj\Debug\CE_MyMod.dll

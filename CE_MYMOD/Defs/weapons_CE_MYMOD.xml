@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- ==================== M4A1 Beowulf ==================== -->
+
+<thingDef>
+ParentName="BaseHumanMakeableGun">
+	<defName>CE_Gun_M4A1 Beowulf</defName>
+	<label>M4A1 Beowulf</label>
+	<description>Ancient military weapon chambered for an intermediate cartridge. The simple design makes it easy to assemble and gives it high reliability.</description>
+	<graphicData>
+		<texPath>Textures/Weapons/weapon_m4a1</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<statBases>
+		<WorkToMake>27000</WorkToMake>
+		<SightsEfficiency>1</SightsEfficiency>
+		<ShotSpread>0.09</ShotSpread>
+		<SwayFactor>1.21</SwayFactor>
+		<Bulk>8.80</Bulk>
+		<Mass>3.30</Mass>
+		<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>45</Steel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+		<WoodLog>10</WoodLog>
+	</costList>
+	<verbs>
+		<li Class="CombatExtended.VerbPropertiesCE">
+			<recoilAmount>1.87</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<warmupTime>1.1</warmupTime>
+			<range>44</range>
+			<soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</li>
+	</verbs>
+	<thingSetMakerTags>
+		<li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+	<weaponTags>
+		<li>IndustrialGunAdvanced</li>
+		<li>CE_AI_AR</li>
+	</weaponTags>
+	<comps>
+		<li Class="CombatExtended.CompProperties_AmmoUser">
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+		</li>
+		<li Class="CombatExtended.CompProperties_FireModes">
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+		</li>
+	</comps>
+	<recipeMaker>
+		<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+	</recipeMaker>
+	<tools>
+		<li Class="CombatExtended.ToolCE">
+			<label>stock</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>1.55</cooldownTime>
+			<chanceFactor>1.5</chanceFactor>
+			<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2.02</cooldownTime>
+			<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
+			<label>muzzle</label>
+			<capacities>
+				<li>Poke</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>1.55</cooldownTime>
+			<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+		</li>
+	</tools>
+	<modExtensions>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1,1.1</DrawSize>
+			<DrawOffset>0.1,-0.05</DrawOffset>
+		</li>
+	</modExtensions></thingDef>
+<!-- ==================== MCX 300BLK ==================== -->
+<thingDef>
+	<defName>CE_Gun_AKM</defName>
+	<label>AKM</label>
+	<description>Ancient military weapon chambered for an intermediate cartridge. The simple design makes it easy to assemble and gives it high reliability.</description>
+	<graphicData>
+		<texPath>Textures/Weapons/weapon_mcxt</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<statBases>
+		<WorkToMake>27000</WorkToMake>
+		<SightsEfficiency>1</SightsEfficiency>
+		<ShotSpread>0.09</ShotSpread>
+		<SwayFactor>1.21</SwayFactor>
+		<Bulk>8.80</Bulk>
+		<Mass>3.30</Mass>
+		<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>45</Steel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+		<WoodLog>10</WoodLog>
+	</costList>
+	<verbs>
+		<li Class="CombatExtended.VerbPropertiesCE">
+			<recoilAmount>1.87</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<warmupTime>1.1</warmupTime>
+			<range>44</range>
+			<soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</li>
+	</verbs>
+	<thingSetMakerTags>
+		<li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+	<weaponTags>
+		<li>IndustrialGunAdvanced</li>
+		<li>CE_AI_AR</li>
+	</weaponTags>
+	<comps>
+		<li Class="CombatExtended.CompProperties_AmmoUser">
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+		</li>
+		<li Class="CombatExtended.CompProperties_FireModes">
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+		</li>
+	</comps>
+	<recipeMaker>
+		<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+	</recipeMaker>
+	<tools>
+		<li Class="CombatExtended.ToolCE">
+			<label>stock</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>1.55</cooldownTime>
+			<chanceFactor>1.5</chanceFactor>
+			<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2.02</cooldownTime>
+			<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
+			<label>muzzle</label>
+			<capacities>
+				<li>Poke</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>1.55</cooldownTime>
+			<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+		</li>
+	</tools>
+	<modExtensions>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1,1.1</DrawSize>
+			<DrawOffset>0.1,-0.05</DrawOffset>
+		</li>
+	</modExtensions>
+	</thingDef>
+
+<!-- =========================== MK18 458 SOCOM ================== -->
+<thingDef>
+	<defName>CE_Gun_AKM</defName>
+	<label>AKM</label>
+	<description>Ancient military weapon chambered for an intermediate cartridge. The simple design makes it easy to assemble and gives it high reliability.</description>
+	<graphicData>
+		<texPath>Textures/Weapons/weapon_mk18mod0</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<soundInteract>Interact_Rifle</soundInteract>
+	<statBases>
+		<WorkToMake>27000</WorkToMake>
+		<SightsEfficiency>1</SightsEfficiency>
+		<ShotSpread>0.09</ShotSpread>
+		<SwayFactor>1.21</SwayFactor>
+		<Bulk>8.80</Bulk>
+		<Mass>3.30</Mass>
+		<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+	</statBases>
+	<costList>
+		<Steel>45</Steel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+		<WoodLog>10</WoodLog>
+	</costList>
+	<verbs>
+		<li Class="CombatExtended.VerbPropertiesCE">
+			<recoilAmount>1.87</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<warmupTime>1.1</warmupTime>
+			<range>44</range>
+			<soundCast>Shot_CE_AssaultRifleSlow</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</li>
+	</verbs>
+	<thingSetMakerTags>
+		<li>RewardStandardQualitySuper</li>
+	</thingSetMakerTags>
+	<weaponTags>
+		<li>IndustrialGunAdvanced</li>
+		<li>CE_AI_AR</li>
+	</weaponTags>
+	<comps>
+		<li Class="CombatExtended.CompProperties_AmmoUser">
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+		</li>
+		<li Class="CombatExtended.CompProperties_FireModes">
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+		</li>
+	</comps>
+	<recipeMaker>
+		<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+	</recipeMaker>
+	<tools>
+		<li Class="CombatExtended.ToolCE">
+			<label>stock</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>1.55</cooldownTime>
+			<chanceFactor>1.5</chanceFactor>
+			<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
+			<label>barrel</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2.02</cooldownTime>
+			<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+		</li>
+		<li Class="CombatExtended.ToolCE">
+			<label>muzzle</label>
+			<capacities>
+				<li>Poke</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>1.55</cooldownTime>
+			<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+			<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+		</li>
+	</tools>
+	<modExtensions>
+		<li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1,1.1</DrawSize>
+			<DrawOffset>0.1,-0.05</DrawOffset>
+		</li>
+	</modExtensions>
+	</thingDef>
+</Defs>

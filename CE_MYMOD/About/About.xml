@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>CE_MYMOD</name> <!-- The name of your mod in the mod list -->
+  <author>Sharpblades</author>
+  <packageId>Sharpblades.CEMYMOD</packageId> <!-- a unique identifier for your mod. Must contain only a-z and periods, no spaces. -->
+  <supportedVersions> <!-- the version(s) your mod supports -->
+    <li>1.4</li>
+  </supportedVersions>
+  <description>This mod adds 4 new weapons that use Special Ammo</description>
+</ModMetaData>
