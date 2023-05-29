@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>MCXT</defName>
+		<statBases>
+			<Mass>2.30</Mass>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1.28</SwayFactor>
+			<Bulk>5.25</Bulk>
+			<WorkToMake>40000</WorkToMake>
+		</statBases>
+		<costList>
+			<Steel>75</Steel>
+			<Chemfuel>25</Chemfuel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<Properties>
+			<recoilAmount>1.2</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Ammo_300AACBlackout_FMJ</defaultProjectile>
+			<warmupTime>1.275</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>SoundWeapon_HK762FIRE</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<recoilPattern>Regular</recoilPattern>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>30</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_300AACBlackout</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+		</FireModes>
+		<!-- No additional CE weaponTags needed -->
+	</Operation>
+</Patch>
